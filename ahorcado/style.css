@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+#hangman-game {
+    text-align: center;
+    background-color: #fff;
+}
+#hangman {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#word, #clue {
+    margin-bottom: 20px;
+}
+#letters {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 10px;
+}
+#letters span {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#letters span:hover {
+    background-color: #ddd;
+}
+canvas {
+    border: 1px solid #000;
+}
